@@ -6,4 +6,8 @@ class Array
       value
     end
   end
+
+  def map_2x_ver_2(&block)
+    self.map {  |x| (yield x) * 2 }
+  end
 end
