@@ -8,7 +8,6 @@ class Threads
     Benchmark.bm do |x|
       x.report("Seq: ") { seq }
       x.report("Threads: ") { threads }
-      x.report("Pool: ") { thread_pools }
     end
   end
 
